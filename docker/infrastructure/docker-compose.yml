@@ -1,0 +1,49 @@
+db:
+  build: db
+  restart: always
+  volumes:
+    - ./volumes/db/data:/var/lib/postgresql/data
+    - ./volumes/db/log:/var/log/postgresql
+  environment:
+    - METASFRESH_USERNAME=metasfresh
+    - METASFRESH_PASSWORD=metasfresh
+    - METASFRESH_DBNAME=metasfresh
+    - DB_SYSPASS=System
+    - POSTGRES_PASSWORD=ip2LmNzXX8p8iXg9lZTWEJ9524kQDbXFudB7LR03T-xK9fLweX3TLMkA2AYcEiaS
+  ports:
+    - "5433:5432"
+rabbitmq:
+  build: rabbitmq
+  expose:
+    - "5672"
+  restart: always
+  volumes:
+    - ./volumes/rabbitmq/log:/var/log/rabbitmq/log
+  environment:
+    RABBITMQ_DEFAULT_USER: "guest"
+    RABBITMQ_DEFAULT_PASS: "guest"
+    RABBITMQ_DEFAULT_VHOST: "/"
+  ports:
+    - "5672:5672"
+search:
+  build: search
+  ulimits:
+    memlock:
+      soft: -1
+      hard: -1
+    nofile:
+      soft: 65536
+      hard: 65536
+  cap_add:
+    - IPC_LOCK
+# to access the search api directly
+# (e.g. if you did docker-compose up search to have the deachboard with your locally running metasfresh services)
+# uncomment following ports:
+  ports:
+   - "9201:9200"
+   - "9301:9300"
+  volumes:
+    - ./volumes/search/data:/usr/share/elasticsearch/data
+  environment:
+    - "ES_JAVA_OPTS=-Xms128M -Xmx256m"
+  restart: always
