@@ -1,1 +1,3 @@
 *.log
+docker/elk/volumes
+docker/infrastructure/volumes
