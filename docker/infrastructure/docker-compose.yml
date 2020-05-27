@@ -11,7 +11,7 @@ db:
     - DB_SYSPASS=System
     - POSTGRES_PASSWORD=ip2LmNzXX8p8iXg9lZTWEJ9524kQDbXFudB7LR03T-xK9fLweX3TLMkA2AYcEiaS
   ports:
-    - "5433:5432"
+    - "5432:5432"
 rabbitmq:
   build: rabbitmq
   expose:
@@ -37,7 +37,7 @@ search:
   cap_add:
     - IPC_LOCK
 # to access the search api directly
-# (e.g. if you did docker-compose up search to have the deachboard with your locally running metasfresh services)
+# (e.g. if you did docker-compose up search to have the dashboard with your locally running metasfresh services)
 # uncomment following ports:
   ports:
    - "9201:9200"
