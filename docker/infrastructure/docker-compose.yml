@@ -22,8 +22,6 @@ rabbitmq:
   expose:
     - "5672"
   restart: always
-  volumes:
-    - ./volumes/rabbitmq/log:/var/log/rabbitmq/log
   environment:
     RABBITMQ_DEFAULT_USER: "guest"
     RABBITMQ_DEFAULT_PASS: "guest"
@@ -48,7 +46,7 @@ search:
    - "9201:9200"
    - "9301:9300"
   volumes:
-    - ./volumes/search/data:/usr/share/elasticsearch/data
+    - metasfresh_elasticsearch:/usr/share/elasticsearch/data
   environment:
     - "ES_JAVA_OPTS=-Xms128M -Xmx256m"
   restart: always
