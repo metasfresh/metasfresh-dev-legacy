@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="logstash_apm ServerBoot" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+  <configuration default="false" name="logstash_apm ServerBoot" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" folderName="elk">
     <module name="metasfresh-dist-serverRoot" />
     <extension name="coverage">
       <pattern>

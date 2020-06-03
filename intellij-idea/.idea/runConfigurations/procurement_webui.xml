@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="procurement-webui" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+  <configuration default="false" name="procurement-webui" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" folderName="Less Used">
     <module name="de.metas.procurement.webui" />
     <option name="SPRING_BOOT_MAIN_CLASS" value="de.metas.procurement.webui.Application" />
     <option name="ALTERNATIVE_JRE_PATH" />

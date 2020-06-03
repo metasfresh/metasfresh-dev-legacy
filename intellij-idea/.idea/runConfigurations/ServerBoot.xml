@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="ServerBoot" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+  <configuration default="false" name="ServerBoot" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" folderName="all local" nameIsGenerated="true">
     <module name="metasfresh-dist-serverRoot" />
     <extension name="coverage">
       <pattern>

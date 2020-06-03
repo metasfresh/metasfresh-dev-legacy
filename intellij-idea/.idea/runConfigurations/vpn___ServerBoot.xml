@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="vpn - ServerBoot" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+  <configuration default="false" name="vpn - ServerBoot" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" folderName="vpn">
     <module name="metasfresh-dist-serverRoot" />
     <extension name="coverage">
       <pattern>
