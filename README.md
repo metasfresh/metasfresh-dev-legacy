@@ -1,6 +1,6 @@
 # metasfresh-dev
 
-!! MOVED TO https://github.com/metasfresh/metasfresh/tree/master_add_metasfresh-dev/misc/dev-support !!
+!! MOVED TO https://github.com/metasfresh/metasfresh/tree/master/misc/dev-support !!
 
 This repository contains resources intended to help metasfresh developers:
 * all our [eclipse config files](https://github.com/metasfresh/metasfresh-dev/tree/master/eclipse-config) (formatter, code cleanup, templates etc) and a documentation on how to set import them into eclipse
